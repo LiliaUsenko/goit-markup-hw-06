@@ -565,6 +565,10 @@ img {
   margin-left: 80px;
 }
   
+.subscribe-form {
+  display: flex; 
+
+}
 .name-form-subscribe {
   font-style: normal;
   font-weight: 500;
@@ -582,6 +586,7 @@ img {
 }
   
 .text-field-subscribe {
+  margin-right: 24px; 
   position: relative;
 }
 
@@ -601,47 +606,49 @@ img {
 .text-field {
   width:264px ;
   height:40px ;
-  border: 1px solid #FFFFFF;
+  border: 1px solid var(--color-white);
   border-radius: 4px;
-  background-color: inherit;
+  background-color: transparent; 
   color: var(--color-white);
   align-items: center;
-}
-
-.text-field::placeholder {
-  padding-left: 16px;
-  color: var(--color-white);
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 2;
-  display: flex;
-  align-items: center;
+  line-height: 1.5;
   letter-spacing: 0.04em;
+  padding-left: 16px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); 
 }
+
+.text-field::placeholder {
+   display: flex;
+  align-items: center;
+  }
   
 .subscribe-button {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 24px;
+  min-width: 165px;
+  height: 40px;
   padding: 8px 24px;
   background-color: var(--color-iris);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
   border-radius: 4px;
   cursor: pointer;
- }
-  
-.text-button-subscribe {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  text-align: center;
-  align-content: center;
   letter-spacing: 0.04em;
   color : var(--color-white);
 }
   
 .icon-button-subscribe {
+  margin-left: 16px;
   fill: var(--color-white);
 }
 
@@ -794,6 +801,7 @@ img {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  padding: 72px 24px 24px 24px;
   background-color: var(--color-dairy);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
   0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -843,9 +851,7 @@ img {
   display: block;
   width: 100%;
   text-align: center;
-  padding-top: 72px;
-  padding-left: 24px;
-  padding-right: 24px;
+  margin-bottom: 16px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -854,20 +860,17 @@ img {
   letter-spacing: 0.02em;
 }
 
-.modal-wrapper {
- padding-top: 16px;
- padding-left: 24px;
- padding-bottom: 24px;
- padding-right: 24px;
+.modal-input{
+  margin-bottom: 8px;
 }
 
 .lable-modal {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--color-light-slate);
 }
@@ -888,30 +891,26 @@ img {
 }
 
 .fild-input-modal {
-  width: 360px;
+  width:100%;
   height: 40px;
   padding-left: 38px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.2);
   border-radius: 4px;
   border-color: var(--color-navy-blue-modal);
-  outline: none;
-  transition-property: border-color;
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
+  background-color: transparent;
+  outline:transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
   
 .modal-input-icon {
   position: absolute;
   top: 50%;
-  left:19px;
+  left:16px;
   transform: translatey(-50%);
   fill: var(--color-navy-blue);
-  transition-property: fill;
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
-
-.fild-input-modal:focus + .modal-input-icon { 
+.modal-input-icon:focus { 
    fill: var(--color-iris);
 }
 
@@ -921,30 +920,34 @@ img {
 }
 
 .field-comment {
-  width: 360px;
+  width: 100%;
   height: 120px;
   resize: none;
   margin-top: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   border-color: var(--color-navy-blue-modal);
-  outline: none;
-  transition-property: border-color;
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
-}
-
-.field-comment::placeholder {
+  outline:transparent;
   font-style: normal;
   font-weight: 400;
+  color: rgba(46, 47, 66, 0.4);
   font-size: 12px;
   line-height: 1.17;
-  color: rgba(46, 47, 66, 0.4);
-  padding-top: 8px;
-  padding-left: 16px;
+  letter-spacing: 0.04em; 
+  background-color: transparent;
+  padding: 8px 16px; 
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-checkbox-accept {
+  margin-bottom: 24px;
 }
 
 .modal-accept {
+  font-size: 12px;
+  line-height:1.17;
+  letter-spacing: 0.04em;
+  color: var(--color-light-slate);
   cursor: pointer;
 }
 
@@ -988,15 +991,14 @@ opacity: 1;
 
 .accept {
   display: inline-block;
-  font-size: 12px;
-  line-height:1.17;
-  letter-spacing: 0.04em;
-  color: var(--color-light-slate);
+ 
   padding-top: 16px;
   margin-left: 8px;
 }
 
 .accept-privacy-policy {
+  width: 16px; 
+  height: 16px;
   color: var(--color-iris);
   text-decoration: underline;
 }
