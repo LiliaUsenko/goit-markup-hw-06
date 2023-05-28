@@ -956,14 +956,6 @@ img {
   transition-timing-function: var(--timing-function);
 }
 
-.icon-accept {
-  opacity: 0;
-  fill: var(--color-cloud);
-  transition-property: opacity,  fill;
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
-}
-
 .btn-modal-send {
   margin-top: 24px;
 }
@@ -975,4 +967,19 @@ img {
 
 .fild-input-modal:focus ~ .modal-input-icon {
   fill: var(--color-iris);
+}
+
+.modal-checkbox:checked + .modal-accept > .accept-privacy-policy {
+  background-color: var(--color-ocean);
+  border: none; 
+  fill: var(--color-white);
+  border-color: var(--color-ocean);
+}
+
+icon-accept {
+  opacity: 0;
+  fill: var(--color-cloud);
+  transition-property: opacity,  fill;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
 }
