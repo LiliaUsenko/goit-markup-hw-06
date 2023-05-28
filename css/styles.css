@@ -793,7 +793,7 @@ img {
 }
 
 .modal:hover {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .modal-button {
@@ -822,7 +822,7 @@ img {
 .modal-icon {
   fill: currentColor;
 }
-`
+
 .modal-icon:hover {
   fill: var(--color-white);
 }
@@ -857,8 +857,6 @@ img {
 
 .input-with-svg {
   position: relative;
-  display: block;
-  margin-top: 4px;
 }
 
 .fild-input-modal {
@@ -888,7 +886,6 @@ img {
 .field-comment {
   width: 100%;
   height: 120px;
-  margin-top: 4px;
   padding: 8px 16px; 
   font-style: normal;
   font-weight: 400;
@@ -906,16 +903,6 @@ img {
 
 .modal-checkbox-accept {
   margin-bottom: 24px;
-}
-
-.modal-checkbox {
-  opacity: 0;
-}
-
-.modal-checkbox:focus .accept-privacy-policy{
-  background-color: var(--color-ocean);
-  border-color: var(--color-ocean);
-  fill: var(--color-white);
 }
 
 .modal-accept {
@@ -944,20 +931,9 @@ img {
 }
 
 .modal-accept-icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 2px;
-  background-color: var(--color-cloud);
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 2px;
   transition-property: background-color,  border;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
-}
-
-.btn-modal-send {
-  margin-top: 24px;
 }
 
 .fild-input-modal:focus,
@@ -974,12 +950,4 @@ img {
   border: none; 
   fill: var(--color-white);
   border-color: var(--color-ocean);
-}
-
-icon-accept {
-  opacity: 0;
-  fill: var(--color-cloud);
-  transition-property: opacity,  fill;
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
 }
