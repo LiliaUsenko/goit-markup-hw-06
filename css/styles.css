@@ -933,7 +933,6 @@ img {
   width: 16px; 
   height: 16px;
   text-decoration: underline;
-  color: var(--color-iris);
   border: 1px solid rgba(46, 47, 66, 0.4); 
   border-radius: 2px; 
   fill: transparent; 
