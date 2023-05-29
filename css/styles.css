@@ -938,9 +938,3 @@ img {
   fill: transparent; 
 }
 
-.modal-checkbox:checked + .modal-accept > .accept-privacy-policy {
-  background-color: #404BBF;
-  border: none;
-  border-color: var(--color-ocean);
-  fill: #FFFFFF;
-}
