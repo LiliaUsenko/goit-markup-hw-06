@@ -938,13 +938,6 @@ img {
   fill: transparent; 
 }
 
-.modal-checkbox:checked + .modal-accept .accept-privacy-policy {
-  background-color: var(--color-ocean);
-  border: none; 
-  fill: var(--color-white);
-  border-color: var(--color-ocean);
-}
-
 .modal-accept-icon {
   transition-property: background-color,  border;
   transition-duration: var(--duration);
