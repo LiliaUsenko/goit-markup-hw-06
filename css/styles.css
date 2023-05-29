@@ -870,6 +870,15 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
   
+.fild-input-modal:focus,
+.field-comment:focus {
+  border-color: var(--color-iris);
+}
+
+.fild-input-modal:focus ~ .modal-input-icon {
+  fill: var(--color-iris);
+}
+
 .modal-input-icon {
   position: absolute;
   top: 50%;
@@ -930,24 +939,15 @@ img {
   fill: transparent; 
 }
 
-.modal-accept-icon {
-  transition-property: background-color,  border;
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
-}
-
-.fild-input-modal:focus,
-.field-comment:focus {
-  border-color: var(--color-iris);
-}
-
-.fild-input-modal:focus ~ .modal-input-icon {
-  fill: var(--color-iris);
-}
-
 .modal-checkbox:checked + .modal-accept > .accept-privacy-policy {
   background-color: var(--color-ocean);
   border: none; 
   fill: var(--color-white);
   border-color: var(--color-ocean);
+}
+
+.modal-accept-icon {
+  transition-property: background-color,  border;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
 }
