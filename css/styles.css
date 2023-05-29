@@ -938,7 +938,7 @@ img {
   fill: transparent; 
 }
 
-.modal-checkbox:checked + .modal-accept > .accept-privacy-policy {
+.modal-checkbox:checked + .modal-accept .accept-privacy-policy {
   background-color: var(--color-ocean);
   border: none; 
   fill: var(--color-white);
