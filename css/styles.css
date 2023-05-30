@@ -792,10 +792,6 @@ img {
   transition-delay: 500ms;
 }
 
-.modal:hover {
-  opacity: 0.9;
-}
-
 .modal-button {
   position: absolute;
   top: 24px;
@@ -938,3 +934,9 @@ img {
   fill: transparent; 
 }
 
+.modal-checkbox:checked + .modal-accept > .accept-privacy-policy {
+  background-color: #404BBF;
+  border: none;
+  fill: #FFFFFF;
+  border-color:#404bbf;
+}
