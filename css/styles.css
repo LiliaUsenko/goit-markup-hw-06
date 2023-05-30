@@ -572,6 +572,7 @@ img {
     
 .subscribe-form {
   display: flex; 
+  gap: 24px;
 }
  
 .text-field-subscribe {
@@ -834,10 +835,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-navy-blue);
-}
-
-.modal-wrapper {
-  gap: 24px;
 }
 
 .modal-input{
