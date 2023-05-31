@@ -610,7 +610,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
   min-width: 165px;
   height: 40px;
   padding: 8px 24px;
@@ -629,6 +628,7 @@ img {
 }
   
 .icon-button-subscribe {
+  margin-left: 16px;
   fill: var(--color-white);
 }
 
