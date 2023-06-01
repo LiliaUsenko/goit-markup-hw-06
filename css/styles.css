@@ -814,16 +814,14 @@ img {
   transition-timing-function: var(--timing-function);
  }
 
-.modal-button:hover {
+.modal-button:hover,
+.modal-button:focus {
   background-color: var(--color-ocean);
+  fill: var(--color-white);
 }
 
 .modal-icon {
   fill: currentColor;
-}
-
-.modal-icon:hover {
-  fill: var(--color-white);
 }
 
 .name-modal-form {
